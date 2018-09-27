@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:900');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+.blackButton{
+  background-color: red;
+}
+
+.whiteButton{
+  background-color: green;
+}
+.logo {
+  float: left;
+}
+.Loginpic{
+  width: 100vw;
+  height: 19  vw;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+.mainimgtext{
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 8vh;
+
+}
+
+.secondimgtext{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-bottom: 2vh;
+}
+
+
+.navlist {
+	background-color: white;
+	height: 10vh;
+
+  /*blocks are aligned using flex*/
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+
+.navlink {
+  margin: 20px 15px;
+  /*Montserrat font by googlefonts*/
+	font-family: 'Montserrat', sans-serif;
+	color: #00bcd4;
+	font-size: 18px;
+  text-decoration: none;
+
+}
+
+.logout {
+  margin: 10px;
+  font-size: 1em;
+  border-radius: 15px;
+  background-color: tomato;
+  color: white;
+}
+.navlink:hover {
+  margin-bottom: 17px;
+	border-bottom: 3px solid #00bcd4;
+  /*CCS3 element for hover effect*/
+	-webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.navbar {
+
+  height: 100px;
+
+}
+
+.interestscontainer {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.categorycontainer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.category{
+  border: solid black 2px;
+}
+
+.interestName {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  font-size: 2.3vh;
+}
+
+.Yoga, .sports, .outdoors, .Tech, .Food, .Family, .Learning, .Health, .Photography, .Music, .Language {
+  height: 15vh;
+  width: 18vw;
+  background-size: 18vw 15vh;
+  border-radius: 5px;
+  margin: 1vw;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.44);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.44);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.44);
+
+  text-align: center;
+  line-height: 5vh;
+}
+
+.Yoga{
+  background-image: url('http://cdn.axar.az/2017/06/03/yoga.jpg');
+}
+.sports{
+  background-image: url('https://vignette.wikia.nocookie.net/phobia/images/a/ab/Sports2.jpg/revision/latest?cb=20171106083857');
+
+}
+.outdoors{
+  background-image: url('https://www.ashevillechamber.org/wp-content/uploads/2017/11/Play-Outdoors-Marquee.jpg');
+
+}
+.Tech{
+  background-image: url('https://www.visioncritical.com/wp-content/uploads/2015/12/tech-companies-resources-950x700.jpg');
+}
+
+.Food{
+
+  background-image: url('http://cheersbar.com.au/wp-content/uploads/2016/01/CheersBar-Food-76.jpg');
+
+}
+.Family{
+
+  background-image: url('http://vanierinstitute.ca/wp-content/uploads/2016/05/Diversity-diversit%C3%A9.jpg');
+
+}
+
+.Learning{
+
+  background-image: url('http://digitalassess.com/wp-content/uploads/2017/01/machine-learning-1.png');
+
+}
+.Health{
+
+  background-image: url('https://i2.wp.com/news.harvard.edu/wp-content/uploads/2018/04/healthy-habits.jpg?resize=1200%2C800&ssl=1');
+
+}
+.clicked{
+  background-color: red;
+}
+
+.Photography{
+
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkeP_F1zRZZifmLfttZmTwyK7R6roEESyKRioPj6bgHY9-ZKUd');
+
+}
+.Music{
+
+  background-image: url('https://www.apple.com/v/music/g/images/shared/og_image_family.png?201806181830');
+
+
+}
+.Language {
+  background-image: url('http://edtechreview.in/images/best-language-learning-apps.jpg');
+}
+
+.groupsdiv{
+  position: relative;
+  width: 100%;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 0 auto;
+  background: linear-gradient(#004092, #020202, transparent)
+}
+.groupsdiv p{
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  background-color: black;
+}
+.groupsimage{
+  width: 100%;
+float: left;
+}
+
+.grouplink{
+  position: absolute;
+  bottom: 2px;
+  left: 4px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6em;
+  display: block;
+  font-weight: 700;
+  color: white;
+   text-shadow: 1px 1px 0 rgba(0,0,0,.26);
+   font-family: 'Catamaran', sans-serif;
+  -webkit-text-stroke: 1px black;
+}
+.groupslocation{
+  display: block;
+}
+
+.groupscontainer{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+
+}
+.groupscontainer2{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.groupcontainer{
+  width: 80vw;
+  margin: 50px auto;
+
+}
+
+.groupcontainermaincontent{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.groupname{
+  color:#00bcd4;
+  font-size: 2em;
+  grid-area: name;
+  margin: 0 0 0 10px;
+
+}
+.eventimage{
+  float:left;
+  grid-column-start: 1;
+  max-width: 100%;
+  grid-area: image;
+  border-radius: 5px;
+}
+.grouplocation{
+  grid-area: location;
+  margin: 0 0 0 10px;
+}
+.groupdescription{
+  grid-area: description;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.groupevents{
+  grid-area: events;
+}
+.groupadmin{
+  margin-left:10px;
+}
+.groupinterests{
+  grid-area: interests;
+
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.groupimage{
+  max-width: 100%;
+}
+
+.groupnickname{
+ grid-area: nickname;
+ margin-left: 10px;
+ margin: 0 0 0 10px;
+}
+.groupeventindividual{
+  border: solid rgb(186, 186, 186) 1px;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 3px -2px rgba(186,186,186,0.45);
+  -moz-box-shadow: 4px 4px 3px -2px rgba(186,186,186,0.45);
+  box-shadow: 4px 4px 3px -2px rgba(186,186,186,0.45);
+}
+.groupeventindividualname{
+text-decoration: none;
+color: #00bcd4
+}
+.groupeventindividualdate{
+margin: 0;
+font-size: 14px;
+color: red;
+}
+.groupeventindividualdescription{
+font-size: 12px;
+}
+.groupeventindividuallocation{
+margin: 0;
+font-size: 14px;
+}
+
+.groupinterests li {
+  float: left;
+  background-color: rgb(209, 209, 209);
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+}
+
+.groupinterests li a {
+  display: block;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.groupinterests li:hover {
+  background-color:rgb(186, 186, 186);
+}
+
+.create a {
+  text-decoration: none;
+  font-size: 15px;
+  }
+
+.nextevent {
+  font-size: 22px;
+  float:right;
+}
+ .nextevent {
+  font-size: 22px;
+  float:right;
+ }
+
+ .eventtitle {
+  border-bottom: 1px solid grey;
+  margin-left: 26px;
+ }
+
+ .eventtitle a{
+  text-decoration: none;
+ }
+
+.createevent {
+  background-color: lightgrey;
+  height: 600px;
+  width: 1440px;
+  position: fixed;
+  top: 50%;
+  margin-top: -250px;
+
+}
+
+.createevent ul li {
+  list-style-type: none;
+  font-weight: bolder;
+  margin-left: 400px;
+}
+
+
+.createevent input {
+  margin-left:18px;
+  width: 300px;
+  padding: 8px 15px 8px 15px;
+
+}
+label {
+  max-width: 600px;
+
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color:royalblue;
+  color:#ffffff;
+  margin-left: 700px;
+}
+
+input[type="text"] {
+  width: 300px;
+}
+
+input[type="date"] {
+  max-width: 100px;
+  margin-left: 139px;
+}
+input[type="time"] {
+  max-width: 100px;
+  margin-left: 67px;
+}
+
+input[name="location"] {
+  margin-left: 152px;
+}
+input[type="number"] {
+  max-width: 100px;
+  margin-left: 49px;
+}
+textarea[name="description"] {
+  margin-left: 224px;
+  max-width: 340px;
+}
+input[type="file"] {
+ max-width: 190px;
+ margin-left: 2px;
+}
+
+input[name="image"] {
+ max-width: 100px;
+ margin-left: 20px;
+
+}
+.calendar{
+   border: 3px solid grey;
+  margin: auto;
+ }
+
+.creategroup {
+   height: 200px;
+    width: 700px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -300px;
+ }
+
+.creategroup input {
+  margin-left:18px;
+  width: 300px;
+  padding: 8px 15px 8px 15px;
+
+}
+
+.createevent h1 {
+  margin-left: 400px;
+}
+
+.creategroup ul li {
+  list-style-type: none;
+  font-weight: bolder;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color:royalblue;
+  color:#ffffff;
+  margin-left: 140px;
+}
+
+input[name="name"] {
+  margin-left: 67px;
+}
+
+input[name="location1"] {
+  margin-left: 41px;
+}
+
+input[name="image2"] {
+  margin-left: 63px;
+}
+input[name="nicknames"] {
+  margin-left: 23px;
+}
+
+.container {
+  margin:76px;
+  max-width: 960px;
+  border: 2px solid grey;
+}
+
+.eventcontainer {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.eventinfo{
+  margin: 0 0 0 10px;
+}
+.eventinfo h1{
+  margin: 0;
+}
+
+.containerevent {
+  max-width: 1024px;
+}
+
+.foot-container {
+  background-color: lightblue;
+  width:100%;
+  text-align: center;
+  padding: 1px;
+}
+
+
+
+.label {
+  font-size: 20px;
+}
+
+.mainSignIn {
+  width: 100vw;
+  height: 100vh;
+  background-color: lightskyblue;
+  text-align: center;
+  padding: 3vh;
+}
+
+.mainSignIn li {
+  list-style-type: none;
+}
+
+.mainSignIn button {
+  margin: auto;
+}
+
+input[type="email"] {
+ font-size: 1.3em;
+  border-radius: 3px;
+}
+
+input[type="password"] {
+ font-size: 1.3em;
+  border-radius: 3px;
+}
+
+.interestsgroupscontainer{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+button[name="create"]{
+  padding: 15px;
+}
+
+button[name="signin"]{
+  padding: 15px;
+  color: white;
+}
+
+
+button[name="signup"]{
+    padding: 15px;
+    color: white;
+    margin-top: 2vh;
+  }
+
+.joinbutton{
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color:royalblue;
+  color:#ffffff;
+  margin-left: 10px;
+  }
